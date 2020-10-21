@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/bootstrap.css">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <title>Events</title>
+</head>
+<body>
+    <div class="container">
+        <div id="navbar" class="sidebar">
+            <ul>
+                <li><a href = "index.html"><i class="fas fa-pen"></i>Home</a></li>
+                <li><a href = "events.html"><i class="fas fa-archive"></i>Event</a></li>
+            </ul>
+        </div>
+        <div class="topbar">
+            <ul>
+                <li><a href="events.html" style="color: black; font-family:'sans-serif'">New Request</a></li>
+                <li><a href="table.html" id='tablesss'style="color: black; font-family:'sans-serif'">Submitted Requests</a></li>
+            </ul>
+        </div>
+        <ul class="breadcrumb">
+            <li class="breadcrumb-item1"><a class="breadcrumb-link active" href="index.html">Mobile Devices</a></li>
+            <li class="breadcrumb-item2"><a class="breadcrumb-link" href="events.html">Roaming Activation</a></li>
+            <li class="breadcrumb-item3"><a  class="breadcrumb-link" href="#">Change Selection</a></li>
+        </ul>
+        <!-- <ul class="laptop-breadcrumb">
+            <li><a href="index.html">Laptop Request</a></li>
+            <li class="active"><a href="">Change Selection</a></li>
+        </ul> -->
+        <form class="employees form-inline" action="">
+            <p><b>Employee Details</b></p>
+                <div class="row">
+                    <div class="col-md-6">
+                        <label for="employees" class="left">Employee Name</label>
+                        <select name="" class="form-control" style="width: 100%;" id="employees">
+                            <option value="0"></option>
+                            <option value="1">John Doe</option>
+                            <option value="2">Jane Doe</option>
+                            <option value="3">John Doe</option>
+                            <option value="4">John Doe</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6" id="department-name">
+                        <label for="department-name" class="left">Department Name</label>
+                        <input type="text" class="form-control" style="width: 100%;" >
+                    </div>
+                    <div class="col-md-6" id="signatures">
+                        <label for="signature" class="left">Employee Signature</label>
+                        <input type="text" id="signature" name="signatures" style="width: 100%;" class="form-control">
+                    </div>
+                    <div class="col-md-6" id="designations">
+                        <label for="designation" class="left">Designation</label>
+                        <input type="text" id="designation" name="designation" style="width: 100%;" class="form-control">
+                    </div>
+
+                </div>  
+                <p><b>Request Details</b></p>
+                <div class= "row">
+                    <div class="col-md-6" id="departures">
+                        <label for="departure" class="left">Departure Date</label>
+                        <input type="date" id="departure" class="form-control" style="width: 100%; display: block" name="departures" value="" required>
+                    </div>
+                    <div class="col-md-6" id="returns">
+                        <label for="return" class="left">Return Date</label>
+                        <input type="date" id="return" name="returns" style="width:100%; display: block" class="form-control" value="" required>
+                    </div>
+                    <div class="col-md-6" id="requests">
+                        <label for="request" class="left"> Request Period</label>
+                        <input type="text" id="request" style="width: 100%; display: block;" class="form-control" value="" required>
+                    </div>
+                </div>
+                <div class= "row">
+                    <div class="col-md-6" id="destinations">
+                        <label for="destination" class="left">Destination</label>
+                        <input type="text" id="destination" style="width: 100%;" class="form-control"name="destinations" value="" required>
+                    </div>
+                    <div class="col-md-6" id="phones">
+                        <label for="return" class="left">Phone Number</label>
+                        <input type="text" id="return" style="width: 100%;" class="form-control"name="returns" value="" required>
+                    </div>
+                    <div class="col-md-6" id="models">
+                        <label for="model" class="left">Device Model Specification</label>
+                        <input type="text" id="model" style="width: 100%;" class="form-control"name="model" value="" required>
+                    </div>
+                    <div class="col-md-6" id="business-reasons">
+                        <label for="business-reason" class="left">Business Reason</label>
+                        <input type="text" id="business-reason" style="width: 100%;" class="form-control"name="business-reason" value="" required>
+                    </div>
+                </div>
+            <div id="leave">
+                <p>Will you be on leave during this period?</p>
+                <section class="form-group">
+                    <label for="">Yes</label>
+                    <input type="radio" style="margin: 0 10px 0 10px" >
+                    <label for="">No</label>
+                    <input type="radio">
+                </section>
+            </div>
+            <div id="type">
+                <p><b>Request Type?</b></p>
+                <section class="form-group">
+                    <label for="">New</label>
+                    <input type="radio" style="margin: 0 10px 0 10px" >
+                    <label for="">Replacement</label>
+                    <input type="radio" style="margin: 0 10px 0 10px" >
+                </section>
+            </div>
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-md-12" id="Businesses">
+                        <label for="Business" class="left">Business Reason</label>
+                        <textarea name="Reason" id ="Business" rows="5" cols="20" style="width: 100%;" value=""></textarea>
+                    </div>
+                </div>
+            </div>
+                <p style="font-size: 20px;">Approvers:</p>
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-md-6">
+                        <label for="manager" class="left">Line Manager</label>
+                        <input type="text" id="manager" style="width: 100%;" >
+                    </div>
+                    <div class="col-md-6" id="functionals">
+                        <label for="functional" class="left">Functional Director</label>
+                        <input type="text" id="functional" style="width: 100%;">
+                    </div>
+                    <div class="col-md-6" id="business-partner">
+                        <label for="partner" class="left">HR Business Partner</label>
+                        <input type="text" id="partner" style="width: 100%;">
+                    </div>
+                </div>
+            </div>
+            <br>
+            <button type="submit"class="form-control btn btn-success" id="button">SUBMIT</button>
+        </form>
+    </div>
+    <script src="JS/jquery-3.5.1.js"></script>
+    <!-- <script src="js/jquery.ba-hashchange.min.js"></script> -->
+    <script src="JS/scripts.js"></script>
+</body>
+</html>
