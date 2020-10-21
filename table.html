@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/bootstrap.css">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <title>Table</title>
+</head>
+<body>
+    <div class="container">
+        <div id="navbar" class="sidebar">
+            <ul>
+                <li><a href = "index.html"><i class="fas fa-pen"></i>Home</a></li>
+                <li><a href = ""><i class="fas fa-archive"></i>Event</a></li>
+            </ul>
+        </div>
+        <div class="topbar">
+            <ul>
+                <li><a href="events.html" style="color: black; font-family:'sans-serif'">New Request</a></li>
+                <li><a href="table.html" id='tablesss' style="color: black; font-family:'sans-serif'">Submitted Requests</a></li>
+            </ul>
+        </div>
+        <section class="submitted">
+            <table class="table" id="tables">
+                <thead>
+                <tr>
+                    <th scope="col">Name</th>
+                   <th scope="col">Role</th>
+                   <th scope="col">Education</th>
+                   <th scope="col">Email</th> 
+                </tr>
+                </thead>
+                <tbody class="tbody"></tbody>
+            </table>
+        </section>
+    <div>
+    <script src="JS/jquery-3.5.1.js"></script>
+    <script src="JS/scripts.js"></script>
+</body>
+</html>
