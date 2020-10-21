@@ -49,7 +49,7 @@ window.addEventListener('DOMContentLoaded', (function(){
     });
    
 tableLink.addEventListener('click', function(event){
-    (".submitted").style.display="block";
+    // (".submitted").style.display="block";
 var ourRequest = new XMLHttpRequest();
 ourRequest.open('GET', "https://recruitmentfiles.blob.core.windows.net/practicals/index-json.json", false);
 ourRequest.onLoad=function(){
